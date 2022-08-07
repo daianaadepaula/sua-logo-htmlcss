@@ -12,7 +12,6 @@ section {
   align-items: center;
   min-height: 100vh;
   background: #ffffff;
-  gap: 140px;
 }
 
 main {
@@ -22,6 +21,7 @@ main {
 img {
   width: 500px;
   height: 500px;
+  margin-right: 140px;
 }
 
 h1 {
@@ -57,4 +57,42 @@ button {
   color: #000000;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    margin: 120px 0 60px;
+    width: 395px;
+    height: 300px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  p {
+    display: none;
+  }
+
+  button{
+    margin-top: 46px;
+    width: 229px;
+  }
 }
